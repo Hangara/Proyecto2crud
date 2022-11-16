@@ -12,5 +12,5 @@
     <h2>{{$auto->nombre}}</h2>
     <h2>{{$auto->modelo}}</h2>
 
-</body>
+</body>|
 </html>

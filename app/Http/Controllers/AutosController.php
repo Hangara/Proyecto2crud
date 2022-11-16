@@ -41,6 +41,7 @@ class AutosController extends Controller
             'resguardador'=>'required|max:255',
             'modelo'=>'required|integer|min:4',
             'telefono'=>'required|max:20',
+            'especificaciones'=>'required|max:100'
         ]);
         Autos::create($request->all());
         
@@ -84,12 +85,14 @@ class AutosController extends Controller
             'resguardador'=>'required|max:255',
             'modelo'=>'required|integer|min:4',
             'telefono'=>'required|max:20',
+            'especificaciones'=>'required|max:100'
         ]);   
         $auto->nombre=$request->nombre;
         $auto->fecha=$request->fecha;
         $auto->resguardador=$request->resguardador;
         $auto->modelo=$request->modelo;
         $auto->telefono=$request->telefono;
+        $auto->especificaciones=$request->especificaciones;
         $auto->save();
 
         //Autos::where('id',$auto->id)->update($request->expect('_token','_method'));

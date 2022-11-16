@@ -20,6 +20,7 @@ class CreateAutosTable extends Migration
             $table->string('resguardador');
             $table->smallInteger('modelo')->unsigned()->default(0);
             $table->string('telefono',20);
+            $table->string('especificaciones',100);
         });
     }
 

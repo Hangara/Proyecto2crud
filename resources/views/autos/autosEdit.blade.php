@@ -15,16 +15,19 @@
         <input type='text' name="nombre" id="nombre"value="{{old('nombre')?? $auto->nombre}}">
         <br>
         <label for="fecha">Fecha</label>
-        <input type='date' name="fecha" id="fecha">
+        <input type='date' name="fecha" id="fecha"value="{{old('fecha')?? $auto->fecha}}">
         <br>
         <label for="resguardador">Resguardador</label>
-        <input type='text' name="resguardador" id="resguardador">
+        <input type='text' name="resguardador" id="resguardador"value="{{old('resguardador')?? $auto->resguardador}}">
         <br>
         <label for="modelo">Modelo</label>
-        <input type='number' name="modelo" id="modelo">
+        <input type='number' name="modelo" id="modelo"value="{{old('modelo')?? $auto->modelo}}">
         <br>
         <label for="telefono">Telefono</Tabel>
-        <input type='text' name="telefono" Td="telefono">
+        <input type='text' name="telefono" id="telefono"value="{{old('telefono')?? $auto->telefono}}">
+        <br>
+        <label for="especificaciones">Especificaciones</Tabel>
+        <input type='text' name="especificaciones" id="especificaciones"value="{{old('especificaciones')?? $auto->especificaciones}}">
         <br>
         <input type ='submit' value="Guardar">
     </form>
